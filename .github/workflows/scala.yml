@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: olafurpg/setup-scala@v11
         with: 
-          java-version: openjdk@23
+          java-version: openjdk@1.17.0
       - name: Compile
         run: sbt compile
       
