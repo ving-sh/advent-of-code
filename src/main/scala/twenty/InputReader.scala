@@ -1,6 +1,5 @@
 package twenty
 
-
 import scala.io.Source
 
 object InputReader {
@@ -21,13 +20,13 @@ object InputReader {
       source
         .getLines()
         .toSeq
-        .map{
-          line => fn(line.trim)
+        .map { line =>
+          fn(line.trim)
         }
     } finally {
       source.close()
     }
-      
+
   }
 
 }

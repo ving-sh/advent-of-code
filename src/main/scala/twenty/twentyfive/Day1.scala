@@ -94,6 +94,7 @@ object Day1 extends App {
     else roundUpPosCountZeroClicks(newpos, clicks)
   }
 
+  // this part2 result gives exactly one extra count, classic off-by-one error.
   @tailrec
   def result2(
       curPos: Int,
